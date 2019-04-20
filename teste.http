@@ -1,0 +1,19 @@
+http://localhost:3000/cursos
+
+###
+
+POST http://localhost:3000/cursos HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Vue"
+}
+
+###
+
+PUT http://localhost:3000/cursos/3 HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "React"
+}
