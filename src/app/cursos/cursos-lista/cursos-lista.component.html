@@ -27,7 +27,7 @@
               <button class="btn btn-outline-warning mb-1 mr-1 btn-sm" (click)="onEdit(curso.id)">
                 Atualizar
               </button>
-              <button class="btn btn-outline-danger mb-1 btn-sm">
+              <button class="btn btn-outline-danger mb-1 btn-sm" (click)="onDelete(curso)">
                 Remover
               </button>
             </span>
@@ -51,3 +51,11 @@
 
   </div>
 </div>
+
+<!-- <ng-template #deleteModal>
+  <div class="modal-body text-center">
+    <p>Tem certeza que deseja remover esse Curso?</p>
+    <button type="button" class="btn btn-default mr-2" (click)="onConfirmDelete()">Sim</button>
+    <button type="button" class="btn btn-primary" (click)="onDeclineDelete()">Não</button>
+  </div>
+</ng-template> -->

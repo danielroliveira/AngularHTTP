@@ -18,23 +18,11 @@
     },
     {
       "id": 5,
-      "nome": "material 10"
+      "nome": "Material"
     },
     {
-      "nome": "Material 5",
-      "id": 6
-    },
-    {
-      "nome": "Material 3",
-      "id": 7
-    },
-    {
-      "nome": "Angular 5",
-      "id": 8
-    },
-    {
-      "id": 9,
-      "nome": "Material 8"
+      "id": 6,
+      "nome": "JavaScript"
     }
   ]
 }
