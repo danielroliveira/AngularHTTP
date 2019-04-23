@@ -1,19 +1,22 @@
+import { CrudService } from './../shared/crud-service';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Curso } from './curso';
-import { delay, tap, take } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
-//import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CursosService {
+export class CursosService extends CrudService<Curso> {
 
-  private readonly API = `${environment.API}cursos`;
+  constructor(protected http: HttpClient) {
+    super(http, `${environment.API}cursos`);
+  }
 
-  constructor(private http: HttpClient) { }
-
+  /*
+  *
+  * All the CRUD process was trasferred to the 'CrudService' 
+  *  
   list(){
     return this.http.get<Curso[]>(this.API)
     .pipe(
@@ -45,5 +48,6 @@ export class CursosService {
   delete(id){
     return this.http.delete(`${this.API}/${id}`).pipe(take(1));
   }
+  */
 
 }
